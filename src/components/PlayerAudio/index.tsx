@@ -1,15 +1,15 @@
 import { PlayerAudioStyled } from './PlayerAudio.styles';
-import ReactAudioPlayer from 'react-audio-player';
+// import ReactAudioPlayer from 'react-audio-player';
+
 
 export interface Props {
-  source: any;
+  source: string;
   options?: any;
 }
 
 function PlayerAudio({ source }: Props) {
   return (
     <PlayerAudioStyled>
-      <ReactAudioPlayer src={source} autoPlay controls />
     </PlayerAudioStyled>
   );
 }
