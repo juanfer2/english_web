@@ -14,8 +14,10 @@ function Home() {
   };
 
   const onClick = () => {
-    callsService(word).catch((err) => console.log(err));
-    callImageByWord(word).catch((err) => console.log(err));
+    if (word !== ''){
+      callsService(word).catch((err) => console.log(err));
+      callImageByWord(word).catch((err) => console.log(err));
+    }
   };
 
   if (loading) return <>Loading...</>;
