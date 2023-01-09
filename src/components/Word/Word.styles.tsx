@@ -1,7 +1,7 @@
 import { StyleTheme } from '@/models/styles.type';
 import styled from '@emotion/styled';
 
-const WordStyled = styled.div`
+const WordStyled = styled.div<any>`
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 2fr;

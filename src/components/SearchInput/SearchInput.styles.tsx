@@ -1,7 +1,7 @@
 import { StyleTheme } from '@/models/styles.type';
 import styled from '@emotion/styled';
 
-const SearchInputStyled = styled.div`
+const SearchInputStyled = styled.div<any>`
   display: flex;
   justify-content: center;
   gap: 5px;

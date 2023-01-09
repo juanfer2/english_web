@@ -1,5 +1,5 @@
 import { Sisben } from '@/models/sisben.type';
-import Button from '../Button';
+import {Button} from '@chakra-ui/react';
 import { CitizenItemStyled } from './CitizenItem.styles';
 
 export interface Props {
