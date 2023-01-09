@@ -20,9 +20,6 @@ function Home() {
     }
   };
 
-  if (loading) return <>Loading...</>;
-  if (error) return <>error</>;
-
   return (
     <div>
       <Banner title="Home" imageUrl={PeopleImage} />
@@ -30,7 +27,10 @@ function Home() {
       <br />
       <SearchInput value={word} onChange={onChange} onClick={onClick} />
 
-      {wordInfo.word && wordInfo.word !== '' && (
+      { loading && (<>Loading...</>) }
+      { error && (<>error</>) }
+
+      {!loading && !error && wordInfo.word && wordInfo.word !== '' && (
         <Word
           title={wordInfo.word || ''}
           subtitle={
