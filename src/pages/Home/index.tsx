@@ -30,7 +30,7 @@ function Home() {
       { loading && (<>Loading...</>) }
       { error && (<>error</>) }
 
-      {!loading && !error && wordInfo.word && wordInfo.word !== '' && (
+      {loading === false && error === null && wordInfo.word && wordInfo.word !== '' && (
         <Word
           title={wordInfo.word || ''}
           subtitle={
