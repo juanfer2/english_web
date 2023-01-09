@@ -3,16 +3,18 @@ import styled from '@emotion/styled';
 
 const WordStyled = styled.div<any>`
   display: grid;
-  width: 100%;
   grid-template-columns: 1fr 2fr;
   justify-content: space-between;
   align-items: center;
-  gap: 2em;
+  gap: 1em;
 
   .image {
     border-radius: 15px;
+    height: 100%;
+    width: 100%;
     img {
-      width: 500px;
+      width: 500%;
+      height: 100%;
       object-fit: cover;
       border-top-left-radius: 13px;
       border-bottom-left-radius: 13px;
@@ -20,6 +22,7 @@ const WordStyled = styled.div<any>`
   }
 
   .info {
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: start;

@@ -25,6 +25,9 @@ function Home() {
 
   return (
     <div>
+      <Banner title="Home" imageUrl={PeopleImage} />
+      <br />
+      <br />
       <SearchInput value={word} onChange={onChange} onClick={onClick} />
 
       {wordInfo.word && wordInfo.word !== '' && (
@@ -49,7 +52,6 @@ function Home() {
 
       {/* <pre>{JSON.stringify(wordInfo, null, 2)}</pre> */}
 
-      <Banner title="Home" imageUrl={PeopleImage} />
     </div>
   );
 }
