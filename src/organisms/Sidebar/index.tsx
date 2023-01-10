@@ -37,7 +37,7 @@ function Sidebar() {
   return (
     <SidebarStyled>
       <div className="top_section">
-        <h3>CiafWeb</h3>
+        <h3>EnglishApp</h3>
 
         {/* <div style={{ marginLeft: isOpen ? '50px' : '0px' }} className="bars">
             <FaBars onClick={toggle} />
