@@ -36,6 +36,11 @@ const WordStyled = styled.div<any>`
     h1 {
       font-size: 50px;
     }
+
+    .audios {
+      display: flex;
+      gap: 1em;
+    }
   }
 `;
 

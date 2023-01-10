@@ -18,7 +18,7 @@ function Sidebar() {
   const menuItem = [
     {
       path: '/',
-      name: 'Home',
+      name: 'Words',
       icon: <IoBalloonOutline />
     },
     {

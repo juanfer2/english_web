@@ -3,7 +3,7 @@ import { Banner } from '@/organisms';
 import { SearchInput, Word } from '@/components';
 import { useWordDictionary } from './useHome';
 import { useState } from 'react';
-import { Meaning } from '@/models/wordDictionary.type';
+import { Meaning, Phonetic } from '@/models/wordDictionary.type';
 
 function Home() {
   const [word, setWord] = useState('');
@@ -40,13 +40,19 @@ function Home() {
       {!loading && error === null && wordInfo.word !== '' && (
         <Word
           title={wordInfo.word || ''}
-          subtitle={wordInfo.meanings
-            ?.flatMap((meaing: Meaning) =>
-              meaing.definitions.map((definition) => definition.definition)
-            )
-            .join('\n ->')}
+          subtitle={
+            wordInfo.meanings?.[0].definitions
+              ? wordInfo.meanings[0].definitions[0].definition +
+                ' example: ->' +
+                wordInfo.meanings[0].definitions[0].example
+              : ''
+          }
           imageUrl={wordInfo.imageUrl}
-          audioSourceUrl={wordInfo.phonetics ? wordInfo.phonetics[0].audio : ''}
+          audioSourceUrl={
+            wordInfo.phonetics
+              ? wordInfo.phonetics.flatMap((phonetic: Phonetic) => phonetic.audio)
+              : []
+          }
         />
       )}
 

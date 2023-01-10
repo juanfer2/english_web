@@ -6,7 +6,7 @@ export interface Props {
   title: string;
   subtitle?: any;
   imageUrl?: string;
-  audioSourceUrl?: string;
+  audioSourceUrl?: string[];
 }
 
 function Word({ title, subtitle, imageUrl, audioSourceUrl }: Props) {
@@ -17,7 +17,11 @@ function Word({ title, subtitle, imageUrl, audioSourceUrl }: Props) {
         <div className="info">
           <h1>{title}</h1>
           {subtitle && <h2 className="subtitle">{subtitle}</h2>}
-          {audioSourceUrl && <PlayerAudio source={audioSourceUrl} />}
+          <div className="audios">
+            {audioSourceUrl?.map((audio: string) => (
+              <PlayerAudio key={audio} source={audio} />
+            ))}
+          </div>
         </div>
       </WordStyled>
     </Card>

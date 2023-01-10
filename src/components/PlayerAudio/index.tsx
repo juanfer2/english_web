@@ -19,13 +19,17 @@ function PlayerAudio({ source }: Props) {
 
   return (
     <PlayerAudioStyled>
-      {/*<Button onClick={() => playAution}>
-        <IoVolumeHighOutline />
-      </Button>
-  */}
-      <audio controls>
+      {
+        <Button
+          onClick={() => {
+            playAution();
+          }}>
+          <IoVolumeHighOutline size={30}/>
+        </Button>
+      }
+      {/*<audio controls>
         <source src={source} type="audio/mpeg" />
-      </audio>
+      </audio> */}
     </PlayerAudioStyled>
   );
 }
