@@ -7,6 +7,10 @@ const BannerStyled = styled.div`
   gap: 1em;
   width: 100%;
 
+  h2 {
+    font-size: 30px;
+  }
+
   img {
     width: 200px;
     object-fit: cover;

@@ -29,7 +29,7 @@ function Home() {
 
   return (
     <div>
-      <Banner title="Home" imageUrl={PeopleImage} />
+      <Banner title="Search Word" imageUrl={PeopleImage} />
       <br />
       <br />
       <SearchInput value={word} onChange={onChange} onClick={onClick} />
