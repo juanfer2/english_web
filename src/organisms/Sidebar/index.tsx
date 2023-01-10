@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {
-  IoBalloonOutline
+  IoBalloonOutline,
+  IoChatbubblesOutline
   // FaBars,
   /// FaUserAlt,
   /// FaRegChartBar,
@@ -20,6 +21,11 @@ function Sidebar() {
       path: '/',
       name: 'Words',
       icon: <IoBalloonOutline />
+    },
+    {
+      path: '/geruns_and_infinitives',
+      name: 'Geruns And Infintives',
+      icon: <IoChatbubblesOutline />
     },
     {
       path: '/citizens',

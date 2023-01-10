@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
-import { Home, Citizens } from '@/pages';
+import { Home, GerunsAndInfinitives } from '@/pages';
 import PrivateRoute from './PrivateRoutes';
 
 interface PageI {
@@ -17,9 +17,9 @@ function RoutesConfig() {
       element: <Home />
     },
     {
-      name: 'Citizens',
-      path: '/citizens',
-      element: <Citizens />
+      name: 'geruns_and_infinitives',
+      path: '/geruns_and_infinitives',
+      element: <GerunsAndInfinitives />
     },
     {
       name: 'page-not-found',
@@ -34,12 +34,12 @@ function RoutesConfig() {
   return (
     <Routes location={location} key={location.pathname}>
       <Route element={<PrivateRoute />}>
-        {pagesPrivate.map((page: any) => (
+        {pagesPrivate.map((page: PageI) => (
           <Route key={page.name} path={page.path} element={page.element} />
         ))}
       </Route>
 
-      {pages.map((page: any) => (
+      {pages.map((page: PageI) => (
         <Route key={`${page.name}`} path={page.path} element={page.element} />
       ))}
     </Routes>

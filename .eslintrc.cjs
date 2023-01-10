@@ -6,13 +6,8 @@ module.exports = {
     jest: true
     // vitest: true
   },
-  extends: [
-    'plugin:react/recommended',
-    'standard-with-typescript',
-    "plugin:prettier/recommended"
-  ],
-  overrides: [
-  ],
+  extends: ['plugin:react/recommended', 'standard-with-typescript', 'plugin:prettier/recommended'],
+  overrides: [],
   parser: '@typescript-eslint/parser', // should be already existing
   parserOptions: {
     ecmaVersion: 'latest',
@@ -23,11 +18,7 @@ module.exports = {
       jsx: true
     }
   },
-  plugins: [
-    'react',
-    'prettier',
-    'vitest'
-  ],
+  plugins: ['react', 'prettier', 'vitest'],
   globals: {
     React: true,
     google: true,
@@ -44,7 +35,7 @@ module.exports = {
   },
   settings: {
     react: {
-      version: "detect"
+      version: 'detect'
     },
     'import/resolver': {
       node: {
@@ -61,9 +52,9 @@ module.exports = {
     'react/prop-types': 'off',
     'max-len': ['warn', { code: 100 }],
     '@typescript-eslint/dot-notation': 'off',
-    "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/triple-slash-reference": "off",
-    "@typescript-eslint/strict-boolean-expressions": "off",
-    "no-unneeded-ternary": "off"
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/triple-slash-reference': 'off',
+    '@typescript-eslint/strict-boolean-expressions': 'off',
+    'no-unneeded-ternary': 'off'
   }
-}
+};

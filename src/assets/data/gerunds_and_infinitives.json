@@ -1,0 +1,319 @@
+{
+  "data": 
+  [
+    {
+      "topic": "Geruns",
+      "info": "Verbs + ing",
+      "description": "next ver must be geruns (verb + ing)",
+      "list": [
+        {
+          "name": "Be accustomed to "
+        },
+        {
+          "name": "Get accustomed to "
+        },
+        {
+          "name": "Admit"
+        },
+        {
+          "name": "Advise"
+        },
+        {
+          "name": "Appreciate"
+        },
+        {
+          "name": "Approve of"
+        },
+        {
+          "name": "Avoid"
+        },
+        {
+          "name": "Be accused of"
+        },
+        {
+          "name": "Can’t help"
+        },
+        {
+          "name": "Delay"
+        },
+        {
+          "name": "Decide on"
+        },
+        {
+          "name": "Deny"
+        },
+        {
+          "name": "Detest"
+        },
+        {
+          "name": "Discuss"
+        },
+        {
+          "name": "Dislike"
+        },
+        {
+          "name": "Dread"
+        },
+        {
+          "name": "Dream of"
+        },
+        {
+          "name": "End up"
+        },
+        {
+          "name": "Enjoy"
+        },
+        {
+          "name": "Feel like"
+        },
+        {
+          "name": "Finish"
+        },
+        {
+          "name": "Forgive for"
+        },
+        {
+          "name": "Get through"
+        },
+        {
+          "name": "Go (shopping)"
+        },
+        {
+          "name": "Go on "
+        },
+        {
+          "name": "Have difficult"
+        },
+        {
+          "name": "Have trouble"
+        },
+        {
+          "name": "Imagine"
+        },
+        {
+          "name": "Insist on"
+        },
+        {
+          "name": "It’s not use"
+        },
+        {
+          "name": "It’s worth"
+        },
+        {
+          "name": "Keep (on)"
+        },
+        {
+          "name": "Look forward to"
+        },
+        {
+          "name": "Mention"
+        },
+        {
+          "name": "Mind"
+        },
+        {
+          "name": "Miss"
+        },
+        {
+          "name": "Postpone"
+        },
+        {
+          "name": "Practice"
+        },
+        {
+          "name": "Put off"
+        },
+        {
+          "name": "Quit"
+        },
+        {
+          "name": "Recommend"
+        },
+        {
+          "name": "Risk"
+        },
+        {
+          "name": "Succeed in"
+        },
+        {
+          "name": "Spend time"
+        },
+        {
+          "name": "Suggest"
+        },
+        {
+          "name": "Be suspected of"
+        },
+        {
+          "name": "Think about"
+        },
+        {
+          "name": "Be used to "
+        },
+        {
+          "name": "Get used to "
+        },
+        {
+          "name": "Waste time"
+        }
+      ]
+    },
+    {
+      "topic": "Infinitives",
+      "info": "...to + verb",
+      "description": "Before the next verb add word to",
+      "list": [
+        {
+          "name": "Afford"
+        },
+        {
+          "name": "Agree"
+        },
+        {
+          "name": "Appear"
+        },
+        {
+          "name": "Arrange"
+        },
+        {
+          "name": "Ask"
+        },
+        {
+          "name": "Care"
+        },
+        {
+          "name": "Decide"
+        },
+        {
+          "name": "Demand"
+        },
+        {
+          "name": "Deserve"
+        },
+        {
+          "name": "Expect"
+        },
+        {
+          "name": "Fail"
+        },
+        {
+          "name": "Hesitate"
+        },
+        {
+          "name": "Hope"
+        },
+        {
+          "name": "Intend"
+        },
+        {
+          "name": "Know (how)"
+        },
+        {
+          "name": "Learn"
+        },
+        {
+          "name": "Manage"
+        },
+        {
+          "name": "Eam"
+        },
+        {
+          "name": "Need"
+        },
+        {
+          "name": "Offer"
+        },
+        {
+          "name": "Plan"
+        },
+        {
+          "name": "Prepare"
+        },
+        {
+          "name": "Pretend"
+        },
+        {
+          "name": "Proise"
+        },
+        {
+          "name": "Refuse"
+        },
+        {
+          "name": "Seem"
+        },
+        {
+          "name": "Volunteer"
+        },
+        {
+          "name": "Wait"
+        },
+        {
+          "name": "Want"
+        },
+        {
+          "name": "Wish"
+        },
+        {
+          "name": "Would like"
+        }
+      ]
+    },
+    {
+      "topic": "Geruns and Infinitives",
+      "info": "It use with verb + ing or infinitive",
+      "description": "It use with verb + ing or infinitive",
+      "list": [
+        {
+          "name": "Begin"
+        },
+        {
+          "name": "Can’t stand"
+        },
+        {
+          "name": "Continue"
+        },
+        {
+          "name": "Hate"
+        },
+        {
+          "name": "Like"
+        },
+        {
+          "name": "Love"
+        },
+        {
+          "name": "Prefer"
+        },
+        {
+          "name": "Start"
+        }
+      ]
+    }
+  ],
+  "geruns_infinitives": [
+    {
+      "name": "Begin"
+    },
+    {
+      "name": "Can’t stand"
+    },
+    {
+      "name": "Continue"
+    },
+    {
+      "name": "Hate"
+    },
+    {
+      "name": "Like"
+    },
+    {
+      "name": "Love"
+    },
+    {
+      "name": "Prefer"
+    },
+    {
+      "name": "Start"
+    }
+  ]
+}

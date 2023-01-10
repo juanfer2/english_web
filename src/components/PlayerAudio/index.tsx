@@ -24,10 +24,10 @@ function PlayerAudio({ source }: Props) {
           onClick={() => {
             playAution();
           }}>
-          <IoVolumeHighOutline size={30}/>
+          <IoVolumeHighOutline size={30} />
         </Button>
       }
-      {/*<audio controls>
+      {/* <audio controls>
         <source src={source} type="audio/mpeg" />
       </audio> */}
     </PlayerAudioStyled>

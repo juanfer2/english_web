@@ -8,7 +8,7 @@ interface UseWordDictionary {
   error: any;
 }
 
-const emptyWordInfo = { word: '', imageUrl: '' }
+const emptyWordInfo = { word: '', imageUrl: '' };
 
 export const useWordDictionary = () => {
   const [data, setData] = useState<UseWordDictionary>({
