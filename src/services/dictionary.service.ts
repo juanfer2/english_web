@@ -1,4 +1,7 @@
+import { WordInterceptor } from '@/interceptors/word_interceptors';
+import { WordDictionary } from '@/models/wordDictionary.type';
 import axios, { AxiosResponse } from 'axios';
+import { getImageByWord } from './unplash.service';
 const BASE_URL = 'https://api.dictionaryapi.dev/api/v2';
 const LANG = 'en';
 
@@ -32,8 +35,11 @@ export const fetchDictionary = async ({
   return response;
 };
 
-export const getWord = async (word: string) => {
-  const response = await fetchDictionary({ url: 'entries/en/' + word, method: 'GET' });
+export const getWord = async (word: string): Promise<WordDictionary> => {
+  const imageResponse = await getImageByWord(word);
+  console.log(imageResponse);
+  const response = await fetchDictionary({ url: 'entries/' + LANG + '/' + word, method: 'GET' });
+  const wordInfo = WordInterceptor(response.data);
 
-  return response.data;
+  return { ...wordInfo, imageUrl: imageResponse.results[0].urls.regular };
 };

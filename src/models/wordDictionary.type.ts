@@ -29,7 +29,7 @@ export interface License2 {
   url: string;
 }
 
-export interface WordDictionary {
+export interface WordDictionaryRequest {
   word: string;
   phonetics?: Phonetic[];
   meanings?: Meaning[];
@@ -44,3 +44,12 @@ export const emptyWordDictionary = {
   license: {},
   sourceUrls: ['']
 };
+
+export interface WordDictionary {
+  word: string;
+  imageUrl: string;
+  phonetics?: Phonetic[];
+  meanings?: Meaning[];
+  license?: License2;
+  sourceUrls?: string[];
+}

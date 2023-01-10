@@ -1,7 +1,6 @@
 import { WordDictionary } from '@/models/wordDictionary.type';
-import { getWord } from '@/services/dictionary_service';
-import { getImageByWord } from '@/services/unplash.service';
-import { useEffect, useState } from 'react';
+import { getWord } from '@/services/dictionary.service';
+import { useState } from 'react';
 
 interface UseWordDictionary {
   wordInfo: WordDictionary;
@@ -9,32 +8,35 @@ interface UseWordDictionary {
   error: any;
 }
 
+const emptyWordInfo = { word: '', imageUrl: '' }
+
 export const useWordDictionary = () => {
   const [data, setData] = useState<UseWordDictionary>({
-    wordInfo: { word: '' },
+    wordInfo: emptyWordInfo,
     error: null,
     loading: false
   });
 
   const callsService = async (word: string) => {
     try {
-      setData({ wordInfo: { word: '' }, error: null, loading: true });
+      setData({ wordInfo: emptyWordInfo, error: null, loading: true });
       const wordResponse = await getWord(word);
 
-      setData({ wordInfo: wordResponse[0], error: null, loading: false });
+      setData({ wordInfo: wordResponse, error: null, loading: false });
     } catch (error) {
-      setData({ wordInfo: { word: '' }, error, loading: false });
+      setData({ wordInfo: emptyWordInfo, error, loading: false });
     }
   };
 
   return { ...data, callsService };
 };
-
+/*
 interface UseImageByWord {
   image: any;
   loading: boolean;
   error: any;
 }
+
 
 export const useImageByWord = () => {
   const [data, setData] = useState<UseImageByWord>({
@@ -60,3 +62,4 @@ export const useImageByWord = () => {
 
   return { ...data, callImageByWord };
 };
+*/

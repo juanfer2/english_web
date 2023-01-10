@@ -12,7 +12,6 @@ export interface Props {
 }
 
 function SearchInput({ value, onChange, onClick }: Props) {
-  console.log(value);
   return (
     <SearchInputStyled>
       <IoSearchOutline className="icon" size={22} />
